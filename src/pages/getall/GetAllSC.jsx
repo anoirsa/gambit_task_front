@@ -5,6 +5,7 @@ import styled,{css} from 'styled-components/macro';
 const Container = styled.div`
     
     width: 100vw;
+    min-height: calc(100vh - 70px);
     background: #a6c0f1;
     padding: 30px 0px;
     display: grid;
@@ -16,6 +17,7 @@ const Container = styled.div`
 `;
 
 const BoxContainer = styled.div`
+    position: relative;
     height: 60px;
     width: 220px;
     border-radius: 3px;
