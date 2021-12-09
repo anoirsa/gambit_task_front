@@ -4,9 +4,9 @@ import styled,{css} from 'styled-components/macro';
 
 const Container = styled.div`
     
-    width: 100%;
+    width: 100vw;
     background: #a6c0f1;
-    padding: 30px;
+    padding: 30px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: auto;
@@ -27,6 +27,7 @@ const BoxContainer = styled.div`
     align-items: flex-start;
     padding: 2px 10px;
     color:#ffff;
+    margin-left: 10px;
     cursor: pointer;
 
     &:hover {

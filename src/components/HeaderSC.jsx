@@ -12,7 +12,6 @@ const Container = styled.div`
     width: 100%;
     height: 70px;
     background: #1e5dd3;
-    padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,12 +24,13 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    padding: 0px 10px;
 
 `;
 
 const LinkWrapper = styled.div`
     padding: 0px 5px;
-    border-right: 2px solid #ffffff;
+    border-right: ${({primary}) => primary ? 'none' : '2px solid #ffffff'  };
     border-radius: 2px;
     ${customCenter}
     .link--item {
@@ -38,7 +38,7 @@ const LinkWrapper = styled.div`
         text-decoration: none;
         font-size: 20px;
         margin-right: 10px;
-        font-weight: 600;
+        font-weight: 400;
         &:hover {
             transform: translateY(-2px);
             opacity: 0.7;

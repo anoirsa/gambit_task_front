@@ -1,16 +1,16 @@
-import React, {useState, useEffect} from 'react'
-import { getAllData } from '../client';
+import React, {useState, useEffect, useContext} from 'react'
+import { Context } from '../../context/DataContext';
+//import { getAllData } from '../client';
 import { Container, BoxContainer } from './GetAllSC'
 
 
 const GetAll = () => {
-
+    const {getData} = useContext(Context)
     const [registers, setRegister] = useState([]);
 
     useEffect(async () => {
-        const tempV = await getAllData();
+        const tempV = await getData();
         setRegister(tempV);
-        console.log(tempV);
     }, [])
 
     return (

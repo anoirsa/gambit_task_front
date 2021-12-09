@@ -9,20 +9,22 @@ function Header() {
         <Container>
             <Wrapper>
                 <LinkWrapper>
-                    <Link to="#"  className="link--item" >
+                    <Link to="/"  className="link--item" >
                         All
                     </Link>
                 </LinkWrapper>
 
                 <LinkWrapper>
-                    <Link to="#"  className="link--item" >
+                    <Link to="/search"  className="link--item" >
                         Search for register
                     </Link>
                 </LinkWrapper>
             </Wrapper>
 
-            <LinkWrapper>
-                    <Link to="#"  className="link--icon" >
+            <LinkWrapper
+                primary={true}
+            >
+                    <Link to="/"  className="link--icon" >
                         Gambit task
                     </Link>
                 </LinkWrapper>
