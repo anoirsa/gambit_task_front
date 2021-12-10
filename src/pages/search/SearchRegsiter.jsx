@@ -11,6 +11,7 @@ const customCenter = css`
 const Container = styled.div`
     ${customCenter}
     width: 100%;
+    min-width: 800px;
     min-height: calc(100vh - 70px);
     background: #a6c0f1;
    

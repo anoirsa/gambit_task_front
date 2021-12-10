@@ -4,7 +4,8 @@ import styled,{css} from 'styled-components/macro';
 
 const Container = styled.div`
     
-    width: 100vw;
+    width: 100%;
+    min-width: 800px;
     min-height: calc(100vh - 70px);
     background: #a6c0f1;
     padding: 30px 0px;

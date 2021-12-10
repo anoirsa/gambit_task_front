@@ -10,6 +10,7 @@ const customCenter = css`
 
 const Container = styled.div`
     width: 100%;
+    min-width: 800px;
     height: 70px;
     background: #1e5dd3;
     display: flex;
